@@ -1,0 +1,123 @@
+/* COLORS */
+:root {
+  --bg: #faf6fb;           /* soft lavender background */
+  --card: #ffe6f1;         /* light pink box */
+  --text: #4a384b;         /* calm text color */
+  --muted: #9b8fa1;        /* lighter text */
+  --accent: #c38ec7;       /* lavender accent */
+  --accent-light: #f8d7f7; /* pastel highlight */
+}
+
+/* PAGE LAYOUT */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text);
+  background: radial-gradient(#fce5f5, #faf6fb);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* GAME BOX */
+.app {
+  background: var(--card);
+  border-radius: 24px;
+  padding: 28px;
+  width: 100%;
+  max-width: 640px;
+  box-shadow: 0 6px 20px rgba(195, 142, 199, 0.25);
+  border: 2px solid #f7d2f5;
+  text-align: center;
+}
+
+/* TITLE */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  color: var(--accent);
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+/* SCOREBOARD */
+.scoreboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.score {
+  background: #fbe7f5;
+  border: 1px solid #f1d4ea;
+  border-radius: 16px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(195, 142, 199, 0.2);
+}
+
+.score span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.score strong {
+  font-size: 26px;
+}
+
+/* BUTTONS */
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.choice, .secondary {
+  border: 2px solid #e7bde8;
+  background: #ffffff;
+  color: var(--text);
+  padding: 14px;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+
+.choice:hover {
+  background: var(--accent-light);
+  color: var(--accent);
+  box-shadow: 0 0 10px rgba(195, 142, 199, 0.3);
+}
+
+/* RESULTS */
+.result {
+  text-align: center;
+  margin: 16px 0;
+}
+
+#round-result {
+  font-size: 20px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* RESET BUTTON */
+.controls {
+  margin-top: 10px;
+}
+
+.secondary {
+  background: transparent;
+  color: var(--accent);
+}
+
+.secondary:hover {
+  background: var(--accent-light);
+  color: var(--text);
+}

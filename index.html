@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock Paper Scissors 💖</title>
+
+  <!-- Pretty fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="app">
+    <h1>Rock ✨ Paper ✨ Scissors</h1>
+
+    <!-- Scoreboard -->
+    <section class="scoreboard">
+      <div class="score">
+        <span>Player</span>
+        <strong id="player-score">0</strong>
+      </div>
+      <div class="score">
+        <span>Computer</span>
+        <strong id="computer-score">0</strong>
+      </div>
+      <div class="score">
+        <span>Ties</span>
+        <strong id="tie-score">0</strong>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="choices">
+      <button class="choice" data-choice="rock">🪨 Rock</button>
+      <button class="choice" data-choice="paper">📄 Paper</button>
+      <button class="choice" data-choice="scissors">✂️ Scissors</button>
+    </section>
+
+    <!-- Results -->
+    <section class="result">
+      <p id="round-result">Make your move 💫</p>
+      <p id="last-play" class="muted"></p>
+    </section>
+
+    <!-- Reset -->
+    <section class="controls">
+      <button id="reset-btn" class="secondary">Reset Game</button>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
